@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #kutas
+        {
+            width: 300px;
+            height: 300px;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="kutas"></div>
+    <button id="kolorZielony">KOLOR ZIELONY</button>
+    <button id="kolorCzerwony">KOLOR CZERWONY</button>
+
+    <script>
+        var kutas = document.getElementById("kutas")
+        var zielony = document.getElementById("kolorZielony")
+        var czerwony = document.getElementById("kolorCzerwony")
+
+        zielony.onclick = function()
+        {
+            zielony = kutas.style = "background-color: green"
+        }
+
+        czerwony.onclick = function()
+        {
+            czerwony = kutas.style = "background-color: red"
+        }
+    </script>
+</body>
+</html>

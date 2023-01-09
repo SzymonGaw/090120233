@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div
+        {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <input id="suwak" type="range" min="0" max="500" value="300">
+    <div id="div">300</div>
+
+    <script>
+        var suwak = document.getElementById("suwak")
+        var div = document.getElementById("div")
+
+        suwak.addEventListener('input', function()
+        {
+            div.innerHTML = suwak.value;
+            div.style.width=suwak.value+ "px";
+            div.style.height=suwak.value+ "px";
+        })
+    </script>
+</body>
+</html>

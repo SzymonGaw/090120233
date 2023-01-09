@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 4a</title>
+</head>
+<body>
+    <button id="przycisk1">jeden</button>
+    <button id="przycisk2">dwa</button>
+    <button id="przycisk3">trzy</button>
+
+    <script>
+        var button1 = document.getElementById("przycisk1")
+        var button2 = document.getElementById("przycisk2")
+        var button3 = document.getElementById("przycisk3")
+
+        button1.addEventListener('click', function(){
+            button1.innerHTML = document.write("Kliknąłeś na przycisk")
+        })
+        button2.addEventListener('click', function(){
+            button2.innerHTML = document.write("Kliknąłeś na przycisk")
+        })
+        button3.addEventListener('click', function(){
+            button3.innerHTML = document.write("Kliknąłeś na przycisk")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="przycisk">coa</button>
+    <div id="element_div">cos1</div>
+    <span id="elemnet_span">cos2</span>
+    <div id="opis"></div>
+    <script>
+        var przycisk = document.getElementById("przycisk")
+        var div = document.getElementById("element_div")
+        var element2 = document.getElementById("element_span")
+        var opis = document.getElementById("opis")
+        przycisk.onclick = function()
+        {
+            opis.innerHTML = przycisk.getAttribute("id")
+        }
+        div.onclick = function()
+        {
+            opis.innerHTML = div.getAttribute("id")
+        }
+        
+
+    </script>
+</body>
+</html>
